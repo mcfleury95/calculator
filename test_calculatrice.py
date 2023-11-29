@@ -1,4 +1,4 @@
-def test_calculatrice():
+def calculatrice():
     assert addition(3, 5) == 8
     assert addition(-1, 1) == 0
     assert addition(0, 0) == 0
@@ -20,4 +20,4 @@ def test_calculatrice():
     print("Tous les tests ont réussi !")
 
 # Appel de la fonction de test
-test_calculatrice()
+calculatrice()
