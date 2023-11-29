@@ -1,5 +1,5 @@
 import unittest
-from votre_module_calculatrice import addition, soustraction, multiplication, division
+from calculatrice import addition, soustraction, multiplication, division
 
 class TestCalculatrice(unittest.TestCase):
     def test_addition(self):
