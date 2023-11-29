@@ -1,19 +1,18 @@
-def addition(x, y):
-    return x + y
+def addition(a, b):
+    return a + b
 
-def soustraction(x, y):
-    return x - y
+def soustraction(a, b):
+    return a - b
 
-def multiplication(x, y):
-    return x * y
+def multiplication(a, b):
+    return a * b
 
-def division(x, y):
-    if y != 0:
-        return x / y
+def division(a, b):
+    if b != 0:
+        return a / b
     else:
         return "Erreur : division par zéro"
 
-# Menu principal
 while True:
     print("Sélectionnez une opération:")
     print("1. Addition")
@@ -28,20 +27,20 @@ while True:
         print("Au revoir !")
         break
 
-    nombre1 = float(input("Entrez le premier nombre: "))
-    nombre2 = float(input("Entrez le deuxième nombre: "))
+    a = float(input("Entrez le premier nombre: "))
+    b = float(input("Entrez le deuxième nombre: "))
 
     if choix == '1':
-        print(nombre1, "+", nombre2, "=", addition(nombre1, nombre2))
-
+        resultat = addition(a, b)
     elif choix == '2':
-        print(nombre1, "-", nombre2, "=", soustraction(nombre1, nombre2))
-
+        resultat = soustraction(a, b)
     elif choix == '3':
-        print(nombre1, "*", nombre2, "=", multiplication(nombre1, nombre2))
-
+        resultat = multiplication(a, b)
     elif choix == '4':
-        print(nombre1, "/", nombre2, "=", division(nombre1, nombre2))
-
+        resultat = division(a, b)
     else:
         print("Choix invalide. Veuillez entrer un numéro valide (1/2/3/4/5).")
+        continue
+
+    print("Le résultat de l'opération est:", resultat)
+
